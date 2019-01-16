@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class proxy:
+class Proxy:
     def __init__(self):
         self.proxy_list = []
         self.proxy_filter_list = []
@@ -46,7 +46,8 @@ class proxy:
         path = os.path.join(os.path.dirname(__file__), 'proxy_list')
         f = open(path, "w")
         head = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/50.0.2661.102 Safari/537.36',
             'Connection': 'keep-alive'}
         url = "http://icanhazip.com"
         proxy_num = 0
@@ -97,6 +98,6 @@ class proxy:
 
 
 if __name__ == "__main__":
-    a = proxy()
+    a = Proxy()
     print(a.get_proxy())
     a.filter_proxy()

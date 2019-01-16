@@ -3,7 +3,6 @@
 #
 # @Version : 1.0
 # @Time    : 2018/7/27
-# @Author  : 圈圈烃
 # @File    : parsing_html
 # @Description: 解析ip代理网站中免费的ip位置并提取, 目前有以下网站：
 # 1. 无忧代理  : http://www.data5u.com/
