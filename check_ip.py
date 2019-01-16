@@ -3,7 +3,6 @@
 #
 # @Version : 1.0
 # @Time    : 2018/7/27
-# @Author  : 圈圈烃
 # @File    : checking_ip
 # @Description: 对parsing_html.py中获取并保存的代理ip进行格式化，查重和检验
 #
